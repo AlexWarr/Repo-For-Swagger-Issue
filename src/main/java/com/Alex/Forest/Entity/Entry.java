@@ -15,7 +15,7 @@ import lombok.Data;
 public class Entry {
   
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int Entry_ID;
   
   @Column(value= "Notes")

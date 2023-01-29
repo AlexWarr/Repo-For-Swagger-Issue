@@ -14,7 +14,7 @@ import lombok.Data;
 public class Plant {
   
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int Plant_ID;
   
   @Column(value= "Body_Trunk_Stem_Description")
