@@ -1,6 +1,7 @@
 package com.Alex.Forest.controller;
 
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -18,7 +19,7 @@ import com.Alex.Forest.service.SpeciesService;
 @RestController
 @RequestMapping("/4est/Plant_Species")
 public class SpeciesController {
-  
+  @Autowired
   private SpeciesService speciesService;
   
   private SpeciesController(SpeciesService speciesService) {

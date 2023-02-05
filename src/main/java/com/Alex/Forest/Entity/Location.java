@@ -31,7 +31,7 @@ public class Location {
   @Column(value = "Location_Notes")
   private String Location_Notes;
   
-  @OneToMany(mappedBy = "Location")
+  @OneToMany(mappedBy = "Location_Name")
   private Set<Location_has_Plant_Species> Plant_Latin_Name;
   
 

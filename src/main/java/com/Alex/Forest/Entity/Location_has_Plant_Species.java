@@ -21,10 +21,10 @@ public class Location_has_Plant_Species implements Serializable {
   @ManyToOne
   @MapsId("Location_Name")
   @JoinColumn(name = "Location_Name")
-  private Location location;
+  private Location Location_Name;
   
   @ManyToOne
   @MapsId("Plant_Latin_Name")
   @JoinColumn(name = "Plant_Latin_Name")
-  private Plant_Species species;  
+  private Plant_Species Plant_Latin_Name;  
 }
