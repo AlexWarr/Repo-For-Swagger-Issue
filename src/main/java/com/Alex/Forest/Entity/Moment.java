@@ -13,13 +13,13 @@ import lombok.Data;
 public class Moment {
   
   @Id
-  private LocalDateTime Date;
+  private LocalDateTime DTG;
   
   @Column(value= "Season")
   private String Season;
 
   @Column(value= "Plant_Growth_Phase")
-  private String Growth_Phase;
+  private String Plant_Growth_Phase;
   @Column(value= "Weather")
   private String Weather;
 }

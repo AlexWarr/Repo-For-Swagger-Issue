@@ -16,18 +16,18 @@ public class Entry {
   
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private int Entry_ID;
+  private int Entry_Number;
   
   @Column(value= "Notes")
   private String Notes;
 
   //Foreign Keys
-  @Column(value= "Location_Location_Name")
-  private String Location;
-  @Column(value= "Plant_Plant_ID")
-  private int Plant;
-  @Column(value= "Plant_Plant_Species_Plant_Latin_Name")
-  private String Latin_Name;
-  @Column(value= "Moment_Date")
-  private LocalDateTime Date;
+  @Column(value= "Location_Name")
+  private String Location_Name;
+  @Column(value= "Plant_ID")
+  private int Plant_ID;
+  @Column(value= "Plant_Latin_Name")
+  private String Plant_Latin_Name;
+  @Column(value= "DTG")
+  private LocalDateTime DTG;
 }

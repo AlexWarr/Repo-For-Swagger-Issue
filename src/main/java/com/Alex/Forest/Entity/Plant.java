@@ -18,19 +18,19 @@ public class Plant {
   private int Plant_ID;
   
   @Column(value= "Body_Trunk_Stem_Description")
-  private String Body;
+  private String Body_Trunk_Stem_Description;
   @Column(value= "Branch_Leaf_Pattern_Description")
-  private String Branch;
+  private String Branch_Leaf_Pattern_Description;
   @Column(value= "Flower_Fruit_Description")
-  private String Flower_Fruit;
+  private String Flower_Fruit_Description;
   @Column(value= "Plant_Notes")
   private String Plant_Notes;
 
   //Foreign Keys
-  @Column(value= "Plant_Species_Plant_Latin_Name")
+  @Column(value= "Plant_Latin_Name")
   private String Plant_Latin_Name;
   
-  @Column(value= "Location_Location_Name")
-  private String Location;
+  @Column(value= "Location_Name")
+  private String Location_Name;
   
 }
