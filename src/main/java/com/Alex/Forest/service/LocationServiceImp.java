@@ -45,7 +45,6 @@ public class LocationServiceImp implements LocationService{
     existingLocation.setGrowing_Zone(location.getGrowing_Zone());
     existingLocation.setVegetative_Zone(location.getVegetative_Zone());
     existingLocation.setLocation_Notes(location.getLocation_Notes());
-    existingLocation.setPlant_Latin_Name(location.getPlant_Latin_Name());
     locationRepository.save(existingLocation);
     return existingLocation;
   }

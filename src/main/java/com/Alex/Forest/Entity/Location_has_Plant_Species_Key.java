@@ -11,9 +11,9 @@ public class Location_has_Plant_Species_Key implements Serializable {
   
 
   @Column(value = "Location_Name")
-  private Long Location_Name;
+  private String Location_Name;
   
 
   @Column(value = "Plant_Latin_Name")
-  private Long Plant_Latin_Name;  
+  private String Plant_Latin_Name;  
 }
